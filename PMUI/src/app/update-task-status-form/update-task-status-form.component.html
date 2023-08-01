@@ -1,0 +1,213 @@
+<!-- 
+<div>
+    <br>
+    
+    <br>
+    
+</div>
+
+<div class="card">
+               
+    <div class="row">
+        
+        <!-- <div class="col-2"> -->
+            
+            
+            <!-- <img src="" width="70" class="rounded-circle mt-2"> -->
+        
+        
+        <!-- </div> -->
+
+        
+                
+        <!-- <div class="col-10">
+            
+            <div class="comment-box ml-2">
+                
+                <h4>Update Status</h4>
+
+                
+                
+                <div class="comment-area">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+        
+                          <div class="form-outline">
+                            <input type="text" id="firstName" class="form-control form-control-lg" />
+                            <label class="form-label" for="firstName">Project Name</label>
+                          </div>
+        
+                        </div>
+                        <div class="col-md-6 mb-4">
+        
+                          <div class="form-outline">
+                            <input type="text" id="lastName" class="form-control form-control-lg" />
+                            <label class="form-label" for="lastName">Task Name</label>
+                          </div>
+
+                          <!-- <div class="form-outline">
+                            <input type="text" id="firstName" class="form-control form-control-lg" />
+                            <label class="form-label" for="firstName">Project Name</label>
+                          </div>
+
+                          <div class="form-outline datepicker w-100">
+                                <input type="text" class="form-control form-control-lg" id="birthdayDate" />
+                                <label for="birthdayDate" class="form-label">Birthday</label>
+                              </div> -->
+                             
+                          
+                         
+            
+                    <!-- <br>
+
+                  
+                    
+                    <textarea class="form-control" placeholder="Add Comment" rows="4"></textarea>
+                
+                </div> -->
+                 <!-- <div class="row">
+                            <div class="col-md-6 mb-4 d-flex align-items-center">
+            
+                              <div class="form-outline datepicker w-100">
+                                <input type="text" class="form-control form-control-lg" id="birthdayDate" />
+                                <label for="birthdayDate" class="form-label">Birthday</label>
+                              </div>
+                             
+
+                              <div class="form-outline">
+                                <input type="email" id="emailAddress" class="form-control form-control-lg" />
+                                <label class="form-label" for="emailAddress">Email</label>
+                              </div> -->
+                
+                <!-- <div class="comment-btns mt-2">
+                    
+                    <div class="row">
+                        
+                        <div class="col-6">
+                           
+                            <div class="pull-left">
+                            
+                            <button class="btn btn-primary btn-sm" [routerLink]="['/userHome']">Cancel</button>
+                            &nbsp;
+                            <button class="btn btn-primary btn-sm" [routerLink]="['/']">Update Status</button>   
+                                
+                            </div>
+
+                            
+                        </div>
+  
+                    </div>
+                
+                </div>
+            
+            
+            </div>
+        
+        </div> -->
+    
+    
+    <!-- </div>
+
+</div>
+
+<div>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+</div> --> 
+
+
+<div>
+    <br>
+    <br>
+    
+</div>
+
+<div class="card">
+               
+    <div class="row">
+        
+        <!-- <div class="col-2"> -->
+            
+            
+            <!-- <img src="" width="70" class="rounded-circle mt-2"> -->
+        
+        
+        <!-- </div> -->
+        
+        <div class="col-10">
+            
+            <div class="comment-box ml-2">
+                
+                <h4>Update Status</h4>
+                <br>
+                
+                <!-- <div class="rating"> 
+                    <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> 
+                    <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                </div> -->
+
+                
+               
+                <div>Task Id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" [(ngModel)]="taskId" name="taskId"></div><br>
+                
+                <div class="comment-area">
+                    
+                    <textarea class="form-control" placeholder="Update Status" rows="4" [(ngModel)]="formData.status" name="status"></textarea>
+                
+                </div>
+                
+                <div class="comment-btns mt-2">
+                    
+                    <div class="row">
+                        
+                        <div class="col-6">
+                            
+                            <div class="pull-left">
+                            
+                            <button class="btn btn-primary btn-sm" [routerLink]="['/userHome']">Cancel</button>      
+                            &nbsp;
+                            <button class="btn btn-primary btn-sm" (click)="updateStatus(taskId,formData)">Update Status</button> 
+                            </div>
+
+                            
+                        
+                        </div>
+                        <div class="col-6">
+                            
+                            <div class="pull-right">
+                            
+                            <!-- <button class="btn btn-success send btn-sm">Add Comment<i class="fa fa-long-arrow-right ml-1"></i></button>       -->
+                                
+                            </div>
+                        
+                        
+                        
+                        </div>
+                    
+                    </div>
+                
+                </div>
+            
+            
+            </div>
+        
+        </div>
+    
+    
+    </div>
+
+</div>
+
+<div>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+</div>

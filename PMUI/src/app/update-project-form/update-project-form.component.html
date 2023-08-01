@@ -1,0 +1,174 @@
+<div class="parentcontainer">
+
+  <nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <ul class="nav">
+      <!-- Projects -->
+      <li class="nav-item menu-items">
+        <a class="nav-link" [routerLink]="['/adminView']">
+          <span class="menu-title">Projects</span>
+        </a>
+      </li>
+  
+      <!-- Create Project -->
+      <li class="nav-item menu-items">
+        <a class="nav-link" [routerLink]="['/create-project']">
+          <span class="menu-title">Create project</span>
+        </a>
+      </li>
+  
+      <!-- Update Project -->
+      <li class="nav-item menu-items">
+        <a class="nav-link" [routerLink]="['/update-project']">
+          <span class="menu-title">Update Project</span>
+        </a>
+      </li>
+  
+      <!-- Delete Project -->
+      <li class="nav-item menu-items">
+        <a class="nav-link" [routerLink]="['/delete-task']">
+          <span class="menu-title">Delete Project</span>
+        </a>
+      </li>
+  
+      <!-- Task Actions -->
+      <li class="nav-item menu-items">
+        <a class="nav-link" [routerLink]="['/assign-task']">
+          <span class="menu-title">Assign Task</span>
+        </a>
+      </li>
+      <li class="nav-item menu-items">
+        <a class="nav-link" [routerLink]="['/addTask']">
+          <span class="menu-title">Add Task</span>
+        </a>
+      </li>
+      <li class="nav-item menu-items">
+        <a class="nav-link" [routerLink]="['/viewtask']">
+          <span class="menu-title">View Task</span>
+        </a>
+      </li>
+      <li class="nav-item menu-items">
+        <a class="nav-link" [routerLink]="['/deletetask']">
+          <span class="menu-title">Delete Task</span>
+        </a>
+      </li>
+      <li class="nav-item menu-items">
+        <a class="nav-link" [routerLink]="['/updatetask']">
+          <span class="menu-title">Update Task</span>
+        </a>
+      </li>
+      <li class="nav-item menu-items">
+        <a class="nav-link" [routerLink]="['/add-comment']">
+          <span class="menu-title">Add Comment</span>
+        </a>
+      </li>
+      <li class="nav-item menu-items">
+        <a class="nav-link" [routerLink]="['/view-comment']">
+          <span class="menu-title">View Comment</span>
+        </a>
+      </li>
+      <li class="nav-item menu-items">
+        <a class="nav-link" [routerLink]="['/delete-comment']">
+          <span class="menu-title">Delete Comment</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- </div> -->
+<!-- <div class="sa"> -->
+<html>
+<head>
+  <title>Create Project Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f2f5f8;
+    }
+
+    .container {
+      margin-top: 50px;
+      margin-right: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      margin-right: 17px;
+    }
+
+    .form-control:focus {
+      padding: 15px;
+      color: #495057;
+      background-color: #fff;
+      border-color: #80bdff;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+    }
+
+    .submitBtn {
+      padding-right: 40px;
+      background-color: #007bff;
+      color: #fff;
+      border-color: #007bff;
+    }
+
+    .submitBtn:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+
+    .cancelBtn {
+      padding-right: 40px;
+      background-color: #6c757d;
+      color: #fff;
+      border-color: #6c757d;
+    }
+
+    .cancelBtn:hover {
+      background-color: #5a6268;
+      border-color: #5a6268;
+    }
+  </style>
+</head>
+<br>
+  <html>
+  <head>
+    <title>Create Project Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <div class="childContainer">
+  <body>
+    <div class="container">
+      <h4>Update Project</h4>
+      <form>
+
+        <div class="form-group">
+          <label for="projectName">Project Id:</label>
+          <input type="text" class="form-control" id="projectId" placeholder="Enter the project Id" [(ngModel)]="projectId" name="projectId">
+        </div>
+
+        <div class="form-group">
+          <label for="projectName">Project Name:</label>
+          <input type="text" class="form-control" placeholder="Enter the project name" [(ngModel)]="formData.projectName" name="projectName">
+        </div>
+        <div class="form-group">
+          <label for="projectDescription">Description:</label>
+          <textarea class="form-control" placeholder="Enter the project description" [(ngModel)]="formData.projectDescription" name="projectDescription"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="onUpdate(projectId,formData)" >Update Project</button>
+        &nbsp;
+        <button class="submitBtn" type="submit" class="btn btn-primary"  [routerLink]="['/home']">Cancel</button>
+     
+      </form>
+    </div>
+
+   
+  
+    <!-- <-- Include Angular and Bootstrap JS files here -->
+  </body>
+</div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  </html>

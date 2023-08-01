@@ -1,0 +1,195 @@
+<div class="parentcontainer">
+
+    <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <!-- Projects -->
+          <li class="nav-item menu-items">
+            <a class="nav-link" [routerLink]="['/viewpu']">
+              <span class="menu-title"> View Projects</span>
+            </a>
+          </li>
+      
+          <!-- Create Project -->
+          
+      
+          <!-- Update Project -->
+          
+      
+          <!-- Delete Project -->
+         
+      
+          <!-- Task Actions -->
+         
+         
+          <li class="nav-item menu-items">
+            <a class="nav-link" [routerLink]="['/viewtu']">
+              <span class="menu-title">View Task</span>
+            </a>
+          </li>
+         
+          
+          <li class="nav-item menu-items">
+            <a class="nav-link" [routerLink]="['/addcommentu']">
+              <span class="menu-title">Add Comment</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" [routerLink]="['/updatestatusu']">
+              <span class="menu-title">Update Status</span>
+            </a>
+          </li>
+          <!-- <li class="nav-item menu-items">
+            <a class="nav-link" [routerLink]="['/delete-comment']">
+              <span class="menu-title">Delete Comment</span>
+            </a>
+          </li> -->
+        </ul>
+      </nav>
+    <head>
+      <title>Create Project Form</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <style>
+        body {
+          background-color: #f2f5f8;
+        }
+    
+        .container {
+          margin-top: -23px;
+          margin-right: 20px;
+        }
+    
+        .form-group {
+          margin-bottom: 20px;
+          margin-right: 17px;
+        }
+    
+        .form-control:focus {
+          padding: 15px;
+          color: #495057;
+          background-color: #fff;
+          border-color: #80bdff;
+          outline: 0;
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+        }
+    
+        .submitBtn {
+          padding-right: 40px;
+          background-color: #007bff;
+          color: #fff;
+          border-color: #007bff;
+        }
+    
+        .submitBtn:hover {
+          background-color: #0056b3;
+          border-color: #0056b3;
+        }
+    
+        .cancelBtn {
+          padding-right: 40px;
+          background-color: #6c757d;
+          color: #fff;
+          border-color: #6c757d;
+        }
+    
+        .cancelBtn:hover {
+          background-color: #5a6268;
+          border-color: #5a6268;
+        }
+      </style>
+    </head>
+    <div class="childcontainer">
+        <div>
+            <br>
+            <br>
+            
+        </div>
+        
+        <div class="card">
+                       
+            <div class="row">
+                
+                <!-- <div class="col-2"> -->
+                    
+                    
+                    <!-- <img src="" width="70" class="rounded-circle mt-2"> -->
+                
+                
+                <!-- </div> -->
+                
+                <div class="col-10">
+                    
+                    <div class="comment-box ml-2">
+                        
+                        <h4>Update Status</h4>
+                        <br>
+                        
+                        <!-- <div class="rating"> 
+                            <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                            <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> 
+                            <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                            <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                            <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                        </div> -->
+        
+                        <!-- <div>Project Id &nbsp;<input type="text" ></div><br> -->
+                       
+                        <div>Task Id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"  [(ngModel)]="taskId"></div><br>
+        
+                        <!-- <div>User Id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"  [(ngModel)]="formData.userId"></div><br> -->
+                        
+                        <div class="comment-area">
+                            
+                            <textarea class="form-control" placeholder="Update Status" [(ngModel)]="formData.status" rows="4"></textarea>
+                        
+                        </div>
+                        
+                        <div class="comment-btns mt-2">
+                            
+                            <div class="row">
+                                
+                                <div class="col-6">
+                                    
+                                    <div class="pull-left">
+                                    
+                                    <button class="btn btn-primary btn-sm" [routerLink]="['/AdminHome']">Cancel</button>      
+                                    &nbsp;
+                                    <button class="btn btn-primary btn-sm" (click)="addStatus(taskId,formData)">Update Status</button> 
+                                    </div>
+        
+                                    
+                                
+                                </div>
+                                <div class="col-6">
+                                    
+                                    <div class="pull-right">
+                                    
+                                    <!-- <button class="btn btn-success send btn-sm">Add Comment<i class="fa fa-long-arrow-right ml-1"></i></button>       -->
+                                        
+                                    </div>
+                                
+                                
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+                    
+                    
+                    </div>
+                
+                </div>
+            
+            
+            </div>
+        
+        </div>
+        
+        <div>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+        </div>
+        </div>

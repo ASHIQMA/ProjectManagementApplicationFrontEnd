@@ -1,0 +1,170 @@
+<div class="parentcontainer">
+
+    <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <!-- Projects -->
+          <li class="nav-item menu-items">
+            <a class="nav-link" [routerLink]="['/viewpu']">
+              <span class="menu-title"> View Projects</span>
+            </a>
+          </li>
+      
+          <!-- Create Project -->
+          
+      
+          <!-- Update Project -->
+          
+      
+          <!-- Delete Project -->
+         
+      
+          <!-- Task Actions -->
+         
+         
+          <li class="nav-item menu-items">
+            <a class="nav-link" [routerLink]="['/viewtu']">
+              <span class="menu-title">View Task</span>
+            </a>
+          </li>
+         
+          
+          <li class="nav-item menu-items">
+            <a class="nav-link" [routerLink]="['/addcommentu']">
+              <span class="menu-title">Add Comment</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" [routerLink]="['/view-comment']">
+              <span class="menu-title">Update Status</span>
+            </a>
+          </li>
+          <!-- <li class="nav-item menu-items">
+            <a class="nav-link" [routerLink]="['/delete-comment']">
+              <span class="menu-title">Delete Comment</span>
+            </a>
+          </li> -->
+        </ul>
+      </nav>
+    <head>
+      <title>Create Project Form</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <style>
+        body {
+          background-color: #f2f5f8;
+        }
+    
+        .container {
+          margin-top: 50px;
+          margin-right: 20px;
+        }
+    
+        .form-group {
+          margin-bottom: 20px;
+          margin-right: 17px;
+        }
+    
+        .form-control:focus {
+          padding: 15px;
+          color: #495057;
+          background-color: #fff;
+          border-color: #80bdff;
+          outline: 0;
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+        }
+    
+        .submitBtn {
+          padding-right: 40px;
+          background-color: #007bff;
+          color: #fff;
+          border-color: #007bff;
+        }
+    
+        .submitBtn:hover {
+          background-color: #0056b3;
+          border-color: #0056b3;
+        }
+    
+        .cancelBtn {
+          padding-right: 40px;
+          background-color: #6c757d;
+          color: #fff;
+          border-color: #6c757d;
+        }
+    
+        .cancelBtn:hover {
+          background-color: #5a6268;
+          border-color: #5a6268;
+        }
+      </style>
+    </head>
+<div class="childcontainer">
+<div class="container mt-5 mb-5">
+    <div class="d-flex justify-content-center row">
+        <div class="col-md-10">
+            <div class="row p-2 bg-white border rounded">
+                <!-- <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" ></div> -->
+                <div class="col-md-6 mt-1">
+                    <!-- <h5><b>Project Name</b></h5>
+                    <tr *ngFor="let item of data">
+                    <h6>Project ID : {{item.projectId}}</h6>
+                    <div class="d-flex flex-row">
+                        <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span>Task Name:{{item.taskName}}</span>
+                    </div>
+
+                    <div class="d-flex flex-row">
+                        <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span>Tsk001</span>
+                    </div>
+
+                    <div class="mt-1 mb-1 spec-1"><span>Task Discription :{{item.taskDescription}}</span><span class="">
+
+                    </span><span></span><span class="">
+                    </span><span><br></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span></span>
+                    <span class=""></span><span></span>
+                    <span class=""></span><span><br></span></div>
+                    <p class="text-justify text-truncate para mb-0"><br><br></p>
+                </div> -->
+                <label for="taskId">Task Id:</label><br>
+          <input type="text" class="form-control" placeholder="Enter the task Id" [(ngModel)]="taskId" name="taskId">
+        </div>
+        
+                <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                    <div class="d-flex flex-row align-items-center">
+                        <h4 class="mr-1"></h4><span class="strike-text"></span>
+                    </div>
+                    <h6 class="text-success"></h6>
+                    <div class="d-flex flex-column mt-4"><button class="btn btn-outline-primary btn-sm" type="button"  (click)="addComment()">Add Comment</button>
+                        <button class="btn btn-outline-primary btn-sm mt-2" type="button"   (click)="onViewTask()">View Task Details</button>
+                        <!-- <button class="btn btn-outline-primary btn-sm mt-2" type="button" [routerLink]="['/updatestatus']">Update Status</button> -->
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- <div class="row p-2 bg-white border rounded mt-2"> -->
+                <!-- <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="https://i.imgur.com/JvPeqEF.jpg"></div> -->
+                
+                <!-- <div class="col-md-6 mt-1">
+                    <h5><b>Project Name 2</b></h5>
+                    <h6>Project Id 2</h6>
+                    <div class="d-flex flex-row">
+                        <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span></span>
+                    </div>
+                    <div class="mt-1 mb-1 spec-1"><span>100% cotton</span><span class="dot"></span><span>Light weight</span><span class="dot"></span><span>Best finish<br></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span>Unique design</span><span class="dot"></span><span>For men</span><span class="dot"></span><span>Casual<br></span></div> -->
+                    <!-- <p class="text-justify text-truncate para mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.<br><br></p>
+                </div> --> 
+
+                <!-- <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                    <div class="d-flex flex-row align-items-center">
+                        <h6 class="mr-1">Project Management</h6><span class="strike-text"></span>
+                    </div>
+                    <h6 class="text-muted">Task Id: tsk001</h6>
+                    <h6 class="text-success"></h6>
+                    <div class="d-flex flex-column mt-4"><button class="btn btn-primary btn-sm" type="button"  [routerLink]="['/add-comment']">Add Comment</button>
+                        <button class="btn btn-outline-primary btn-sm mt-2" type="button"   [routerLink]="['/taskDetails']">View Task Details</button>
+                        <button class="btn btn-outline-primary btn-sm mt-2" type="button" [routerLink]="['/updatestatus']">Update Status</button>
+                    </div> -->
+    </div>
+</div>
+</div>
